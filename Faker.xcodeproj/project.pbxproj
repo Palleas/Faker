@@ -9,7 +9,15 @@
 /* Begin PBXBuildFile section */
 		7A80BA3E1B869224002F01EA /* Faker.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A80BA3D1B869224002F01EA /* Faker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7A80BA451B869224002F01EA /* Faker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A80BA3A1B869224002F01EA /* Faker.framework */; };
-		7A80BA4A1B869224002F01EA /* FakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A80BA491B869224002F01EA /* FakerTests.swift */; };
+		7A85247C1B86C19800856DE4 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8524781B86C19800856DE4 /* ArrayExtensions.swift */; };
+		7A85247D1B86C19800856DE4 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8524791B86C19800856DE4 /* Generator.swift */; };
+		7A85247E1B86C19800856DE4 /* InternetProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A85247A1B86C19800856DE4 /* InternetProviders.swift */; };
+		7A85247F1B86C19800856DE4 /* PeopleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A85247B1B86C19800856DE4 /* PeopleProvider.swift */; };
+		7A8524801B86C2CB00856DE4 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8524781B86C19800856DE4 /* ArrayExtensions.swift */; };
+		7A8524811B86C2CB00856DE4 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8524791B86C19800856DE4 /* Generator.swift */; };
+		7A8524821B86C2CB00856DE4 /* InternetProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A85247A1B86C19800856DE4 /* InternetProviders.swift */; };
+		7A8524831B86C2CB00856DE4 /* PeopleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A85247B1B86C19800856DE4 /* PeopleProvider.swift */; };
+		7A8524851B86C2E500856DE4 /* GeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8524841B86C2E500856DE4 /* GeneratorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +35,12 @@
 		7A80BA3D1B869224002F01EA /* Faker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Faker.h; sourceTree = "<group>"; };
 		7A80BA3F1B869224002F01EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A80BA441B869224002F01EA /* FakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A80BA491B869224002F01EA /* FakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakerTests.swift; sourceTree = "<group>"; };
 		7A80BA4B1B869224002F01EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A8524781B86C19800856DE4 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		7A8524791B86C19800856DE4 /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
+		7A85247A1B86C19800856DE4 /* InternetProviders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetProviders.swift; sourceTree = "<group>"; };
+		7A85247B1B86C19800856DE4 /* PeopleProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleProvider.swift; sourceTree = "<group>"; };
+		7A8524841B86C2E500856DE4 /* GeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +83,10 @@
 		7A80BA3C1B869224002F01EA /* Faker */ = {
 			isa = PBXGroup;
 			children = (
+				7A8524781B86C19800856DE4 /* ArrayExtensions.swift */,
+				7A8524791B86C19800856DE4 /* Generator.swift */,
+				7A85247A1B86C19800856DE4 /* InternetProviders.swift */,
+				7A85247B1B86C19800856DE4 /* PeopleProvider.swift */,
 				7A80BA3D1B869224002F01EA /* Faker.h */,
 				7A80BA3F1B869224002F01EA /* Info.plist */,
 			);
@@ -80,8 +96,8 @@
 		7A80BA481B869224002F01EA /* FakerTests */ = {
 			isa = PBXGroup;
 			children = (
-				7A80BA491B869224002F01EA /* FakerTests.swift */,
 				7A80BA4B1B869224002F01EA /* Info.plist */,
+				7A8524841B86C2E500856DE4 /* GeneratorTests.swift */,
 			);
 			path = FakerTests;
 			sourceTree = "<group>";
@@ -142,6 +158,7 @@
 		7A80BA311B869224002F01EA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Perfectly-Cooked";
 				TargetAttributes = {
@@ -193,6 +210,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A85247C1B86C19800856DE4 /* ArrayExtensions.swift in Sources */,
+				7A85247D1B86C19800856DE4 /* Generator.swift in Sources */,
+				7A85247E1B86C19800856DE4 /* InternetProviders.swift in Sources */,
+				7A85247F1B86C19800856DE4 /* PeopleProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A80BA4A1B869224002F01EA /* FakerTests.swift in Sources */,
+				7A8524811B86C2CB00856DE4 /* Generator.swift in Sources */,
+				7A8524851B86C2E500856DE4 /* GeneratorTests.swift in Sources */,
+				7A8524821B86C2CB00856DE4 /* InternetProviders.swift in Sources */,
+				7A8524831B86C2CB00856DE4 /* PeopleProvider.swift in Sources */,
+				7A8524801B86C2CB00856DE4 /* ArrayExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +332,7 @@
 		7A80BA4F1B869224002F01EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -317,12 +343,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.perfectly-cooked.Faker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		7A80BA501B869224002F01EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -375,6 +403,7 @@
 				7A80BA501B869224002F01EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A80BA511B869224002F01EA /* Build configuration list for PBXNativeTarget "FakerTests" */ = {
 			isa = XCConfigurationList;
@@ -383,6 +412,7 @@
 				7A80BA531B869224002F01EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
