@@ -5,7 +5,7 @@ email, internet domain name... It's far from finished **BUT** since I'm starting
 *experimenting in the open* thing... here we go. 
 
 It's heavily inspired by the awesome [fzaninotto/Faker](https://github.com/fzaninotto/Faker), I shamelessly 
-borrowed his firstname and lastname for now. 
+borrowed his firstnames and lastnames for now. 
 
 ## Example
 
