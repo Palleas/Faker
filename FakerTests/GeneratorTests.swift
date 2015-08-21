@@ -18,4 +18,15 @@ class GeneratorTests: XCTestCase {
         XCTAssertTrue(g["email"].characters.count > 0)
         XCTAssertTrue(g["domain"].characters.count > 0)
     }
+    
+    func testThatItDoesntTakeTooLongBecauseThatWouldSuck() {
+        let g = Generator.generator()
+
+        measureBlock { () -> Void in
+            print(g["firstname"])
+            print(g["lastname"])
+            print(g["email"])
+            print(g["domain"])
+        }
+    }
 }
